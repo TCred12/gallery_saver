@@ -26,6 +26,8 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
+    namespace 'com.emirsah.gallerysaver' // 🌟 Bunu buraya ekliyoruz
+
     compileSdkVersion 30
 
     sourceSets {
@@ -39,6 +41,7 @@ android {
         disable 'InvalidPackage'
     }
 }
+
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
